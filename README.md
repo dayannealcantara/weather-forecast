@@ -1,5 +1,4 @@
-<h1 align="center" style="text-align: center;">
-  <img alt="Logo do TypeWeather" src="./public/logo.png" style="vertical-align: small;">
+<h1 align="center" style="text-align: center"> 
   Weather Forecast
 </h1>
 
@@ -7,7 +6,7 @@
 
 <h2 id="project">📁 Projeto</h2>
 
-Aplicação meteorológica que busca e exibe informações meteorológicas atuais e dos próximos quatro dias de uma cidade em específica usando API pública OpenWeather.
+Aplicação meteorológica que busca e exibe informações meteorológicas atuais e dos próximos quatro dias de uma cidade em específica, usando API pública OpenWeather.
 
 <h2 id="technologies">💻 Tecnologias</h2>
 
@@ -26,7 +25,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 A aplicação está disponível para uso [aqui](https://weather-forecast-kohl-tau.vercel.app/).
 
-Você também pode executá-la em sua máquina localmente. Certifique-se de ter o `Node.js` e o `yarn` instalados antes de prosseguir com as etapas abaixo:
+Você também pode executá-la em sua máquina localmente. Certifique-se de ter o `Node.js` e o `npm` instalados antes de prosseguir com as etapas abaixo:
 
 1. Clone o projeto:
 
@@ -43,13 +42,13 @@ $ cd weather-forecast
 3. Instale as dependências:
 
 ```
-$ yarn
+$ npm install
 ```
 
 4. Inicie o servidor:
 
 ```
-$ yarn run dev
+$ npm run dev
 ```
 
 ⚠️ **Importante**: Crie uma conta no site [OpenWeather](https://openweathermap.org/api) e obtenha sua chave da API. Então, crie um arquivo .env e preencha o campo VITE_WEATHER_APP_API com sua chave.
