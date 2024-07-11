@@ -1,5 +1,5 @@
 <h1 align="center" style="text-align: center;">
-  <img alt="Logo do TypeWeather" src="./public/logo.png" style="vertical-align: middle;">
+  <img alt="Logo do TypeWeather" src="./public/logo.png" style="vertical-align: small;">
   Weather Forecast
 </h1>
 
