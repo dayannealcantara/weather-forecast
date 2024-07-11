@@ -11,19 +11,19 @@ export const StyledInput = styled.input`
   width: 100%;
   height: 56px;
   border-radius: 8px;
-  background-color: var(--gray-600);
+  background-color: ${({ theme }) => theme.colors.gray600};
   padding: 16px 20px;
   border: none;
-  color: var(--gray-100);
+  color: ${({ theme }) => theme.colors.gray100};
   font-size: 1rem;
 
   &:focus {
     outline: none;
-    border: 1px solid var(--blue-light);
+    border: 1px solid ${({ theme }) => theme.colors.blueLight};
   }
 
   &::placeholder {
-    color: var(--gray-400);
+    color: ${({ theme }) => theme.colors.gray400};
   }
 `;
 
