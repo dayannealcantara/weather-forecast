@@ -1,8 +1,5 @@
-import { Spinner } from "./styles";
-
+import { Spinner } from './styles';
 
 export function Loading() {
-  return (
-    <Spinner />
-  )
+  return <Spinner data-testid="loading" />;
 }

@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
- const spin = keyframes`
+const spin = keyframes`
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
