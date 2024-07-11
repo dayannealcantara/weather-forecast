@@ -67,6 +67,7 @@ export interface getWeatherByCityResponseProps {
 }
 
 export interface CityProps {
+  [x: string]: Key | null | undefined;
   name: string;
   longitude: number;
   latitude: number;
