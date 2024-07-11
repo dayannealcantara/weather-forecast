@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, expect, it } from 'vitest';
 import { mapNextDays } from '.';
 import dayjs from 'dayjs';
@@ -5,6 +6,11 @@ import { weatherIcons } from '../weatherIcons';
 import { WeatherAPIResponseProps } from '../../@types/weather';
 
 const mockData: WeatherAPIResponseProps = {
+  city: {
+    coord: { lat: 0, lon: 0 },
+    id: 0,
+    name: 'Mock City',
+  },
   list: [
     {
       dt: 1720656000,
@@ -14,8 +20,6 @@ const mockData: WeatherAPIResponseProps = {
         temp_min: 26.06,
         temp_max: 26.67,
         pressure: 1014,
-        sea_level: 1014,
-        grnd_level: 954,
         humidity: 67,
         temp_kf: 0.61,
       },
@@ -27,13 +31,9 @@ const mockData: WeatherAPIResponseProps = {
           icon: '04n',
         },
       ],
-      clouds: {
-        all: 76,
-      },
       wind: {
         speed: 2.45,
         deg: 111,
-        gust: 7.92,
       },
       visibility: 10000,
       pop: 0,
@@ -50,8 +50,6 @@ const mockData: WeatherAPIResponseProps = {
         temp_min: 21.36,
         temp_max: 23.23,
         pressure: 1015,
-        sea_level: 1015,
-        grnd_level: 954,
         humidity: 76,
         temp_kf: 1.87,
       },
@@ -63,13 +61,9 @@ const mockData: WeatherAPIResponseProps = {
           icon: '10n',
         },
       ],
-      clouds: {
-        all: 55,
-      },
       wind: {
         speed: 1.45,
         deg: 147,
-        gust: 1.62,
       },
       visibility: 10000,
       pop: 0.22,

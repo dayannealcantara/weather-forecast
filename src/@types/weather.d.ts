@@ -20,23 +20,35 @@ export interface WeatherAPIResponseProps {
     name: string;
   };
   list: {
+    dt: number;
     dt_txt: string;
     pop: number;
     main: {
       temp: number;
       temp_min: number;
       temp_max: number;
+      pressure?: number;
       feels_like: number;
       humidity: number;
       temp_kf: number;
     };
     wind: {
       speed: number;
+      deg?: number;
     };
     weather: {
+      id?: number;
       main: WeatherIconsKeysProps;
       description: string;
+      icon?: string;
     }[];
+    visibility?: number;
+    sys?: {
+      pod: string;
+    };
+    rain?: {
+      '3h': number;
+    };
   }[];
 }
 
@@ -60,6 +72,7 @@ export interface TodayProps {
   weather: WeatherResponseProps;
   details: WeatherDetailsResponseProps;
 }
+
 export interface getWeatherByCityResponseProps {
   city: CityProps;
   today: TodayProps;
