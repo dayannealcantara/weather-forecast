@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
-const { VITE_WEATHER_APP_API } = import.meta.env;
+const { VITE_WEATHER_APP_API, VITE_WEATHER_BASE_URL } = import.meta.env;
 
 export const api = axios.create({
-  baseURL: "https://api.openweathermap.org/data/2.5",
+  baseURL: VITE_WEATHER_BASE_URL,
   params: {
     lang: 'pt_br',
     units: 'metric',
