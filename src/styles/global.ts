@@ -1,21 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-
+import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 16px;
-    --gray-900: #13131A;
-    --gray-800: #16161F;
- 
-    --gray-600: #1E1E29;
-    --gray-500: #3B3B54;
-    --gray-400: #7F7F98;
-    
-    --gray-200: #BFBFD4;
-    --gray-100: #FAFAFA;
-    
-    --white: #FFFFFF;
-    --blue-light: #8FB2F5;
   }
 
   * {
@@ -27,8 +15,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Nunito', sans-serif;
-    background-color: var(--gray-900);
-    color: var(--white); 
+    background-color: ${theme.colors.gray900};
+    color: ${theme.colors.white}; 
   }
 
   ::-webkit-scrollbar {
@@ -36,11 +24,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: var(--gray-600);
+    background-color: ${theme.colors.gray600};
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--gray-200);
+    background-color: ${theme.colors.gray200};
   }
 
   @media (max-width: 768px) {
